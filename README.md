@@ -47,4 +47,8 @@ CREATE TABLE transacoes (
 
 service apache2 restart
 
-### Step 6: Open in your browser: localhost
+### Step 6: Move project to apache folder
+
+sudo mv /path/personal_finance_web /var/www/html
+
+### Step 7: Open in your browser: localhost
