@@ -1,0 +1,133 @@
+.responstable {
+  border-spacing: 0px;
+  width: 100%;
+  background: #FFF;
+  border-top: 25px;
+}
+
+.responstable tr {
+}
+.responstable tr:nth-child(odd) {
+  background-color: #DCDCDC; /*cor do listrado da tabela*/
+}
+.responstable th {
+  display: none;
+  background-color: #024457; /*cor do cabeçado da tabela*/
+  color: #FFF;
+}
+.responstable th:first-child {
+  /*text-align: center;*/
+}
+.responstable th:nth-child(2) {
+  /*display: table-cell;*/
+}
+
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  /*text-align: center;*/
+}
+@media (min-width: 480px) {
+  .responstable td {}
+}
+.responstable th, .responstable td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: white;
+}
+h1 span {
+  color: #167F92;
+}
+
+.box {
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red; /*#b8860b*/ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
